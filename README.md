@@ -152,7 +152,7 @@ In this use-case, it expects all container images and helmchart report.yaml test
 What it is going to do is:
 - It creates container projects, update, attach-PL and submit the results to backend
 - Wait for all the containers are certified in the catalog using hooks and post-run
-- One oneshot-container stage is passed, then next flow is helmchart
+- Once oneshot-container stage is passed, then next flow is helmchart
 - Similarly to container process, it creates, update, attach-PL and then deploy helmchart CNF and generate reportyaml
 - Finally with create_pr is true, then it will copy report.yaml and PR request to charts repo and doing Merge-Request to the production and publish the helm chart
 
