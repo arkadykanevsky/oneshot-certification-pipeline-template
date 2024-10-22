@@ -159,3 +159,6 @@ What it is going to do is:
 ```
 $ KUBECONFIG=$KUBECONFIG dci-pipeline-schedule oneshot-container oneshot-helmchart
 ```
+
+## DCI Pipeline templates info
+More template examples are stored [here](https://github.com/ansvu/oneshot-certification-pipeline-template/tree/main/pipelines)
