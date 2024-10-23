@@ -25,7 +25,7 @@ EOF
 Another important note is that if this `to-your-custom-pipeline-name` is new pipeline name then you need to update all files from `pipelines/` as well.  
 You can do this with one-line script:  
 ```bash
-$ grep -rl 'to-your-custom-pipeline-name' ./pipelines/ | xargs sed -i 's/oneshot-certification-pipeline-template/to-your-custom-pipeline-name/g'
+$ grep -rl 'oneshot-certification-pipeline-template' ./pipelines/ | xargs sed -i 's/oneshot-certification-pipeline-template/to-your-custom-pipeline-name/g'
 ```
 
 Add the credentials for your remoteci in `~/.config/dci-pipeline/dci_credentials.yml`.
