@@ -21,7 +21,12 @@ PIPELINES_DIR=$HOME/to-your-custom-pipeline-name/pipelines
 DEFAULT_QUEUE=pool
 EOF
 ```
-Note: You can create a git repository name `to-your-custom-pipeline-name` then add, commit and push to github to keep track and maintain changes for next release.
+Note: You can create a git repository name `to-your-custom-pipeline-name` then add, commit and push to github to keep track and maintain changes for next release.  
+Another important note is that if this `to-your-custom-pipeline-name` is new pipeline name then you need to update all files from `pipelines/` as well.  
+You can do this with one-line script:  
+```bash
+$ grep -rl 'to-your-custom-pipeline-name' ./pipelines/ | xargs sed -i 's/oneshot-certification-pipeline-template/to-your-custom-pipeline-name/g'
+```
 
 Add the credentials for your remoteci in `~/.config/dci-pipeline/dci_credentials.yml`.
 
