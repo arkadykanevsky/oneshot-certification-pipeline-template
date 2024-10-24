@@ -169,3 +169,12 @@ $ KUBECONFIG=$KUBECONFIG dci-pipeline-schedule oneshot-container oneshot-helmcha
 
 ## DCI Pipeline templates info
 More template examples are stored [here](https://github.com/ansvu/oneshot-certification-pipeline-template/tree/main/pipelines)
+
+Final note: If you plan to create any new custom DCI Pipeline settings, and it is not used with `oneshot-certification` use-case, then you must add the following to your new DCI Pipeline setting:
+```yaml
+  ansible_skip_tags:
+    - post-run
+```
+What it does is, it will skip to hooks that use post-run to wait for the container certification status from the catalog. 
+There are examples from other settings in the `pipelines` directory.
+
