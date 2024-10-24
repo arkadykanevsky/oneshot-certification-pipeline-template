@@ -4,7 +4,7 @@ documentation](https://docs.distributed-ci.io/dci-openshift-agent/#systems-requi
 to prepare the jumpbox.
 
 ## Purpose 
-The purpose of this repository is to use when partners try to run `oneshot-certification` when containers and helmcharts test cases need to pass all the sanity checking. This means all container images' verdict statuses from preflight and all test cases from the helm chart report have no failures. However, this repository also provides some DCI Pipeline template settings for certification use cases.
+The goal of this repository is to use it when partners try to run `oneshot-certification` when containers and helmcharts test cases need to pass all the sanity checking. This means all container images' verdict statuses from preflight and all test cases from the helm chart report have no failures. However, this repository also provides some DCI Pipeline template settings for certification use cases.
 
 ## Instructions
 
