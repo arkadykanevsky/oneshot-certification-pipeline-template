@@ -1,8 +1,10 @@
 # Oneshot Certification Template for a new DCI OpenShift project
-
 Follow the requirements described in [the DCI
 documentation](https://docs.distributed-ci.io/dci-openshift-agent/#systems-requirements)
 to prepare the jumpbox.
+
+## Purpose 
+The purpose of this repository is to use when partners try to run `oneshot-certification` when containers and helmcharts test cases need to pass all the sanity checking. This means all container images' verdict statuses from preflight and all test cases from the helm chart report have no failures. However, this repository also provides some DCI Pipeline template settings for certification use cases.
 
 ## Instructions
 
